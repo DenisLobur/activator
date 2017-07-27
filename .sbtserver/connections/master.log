@@ -1,0 +1,31 @@
+New log file opened at Thu Jul 27 16:24:42 EEST 2017 by 12082@denys-PC
+Taking next connection to: 44828
+New client attempting to connect on port: 37914-44828
+  Address = /127.0.1.1:44828
+This client on port 37914 has uuid ec3c978d-c18e-4153-95f7-37d4ed288c79 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-ec3c978d-c18e-4153-95f7-37d4ed288c79
+Taking next connection to: 44828
+New client attempting to connect on port: 37916-44828
+  Address = /127.0.1.1:44828
+Handshake exception on socket: 37916
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 44828
+New client attempting to connect on port: 37918-44828
+  Address = /127.0.1.1:44828
+This client on port 37918 has uuid 799e8672-d320-4cf8-841b-71b754ebf98c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-ec3c978d-c18e-4153-95f7-37d4ed288c79, activator-799e8672-d320-4cf8-841b-71b754ebf98c
+Taking next connection to: 44828
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 44828
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 44828
