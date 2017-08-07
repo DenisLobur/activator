@@ -4,6 +4,7 @@ import com.google.inject.{Inject, Singleton}
 import models.Product
 import play.Logger
 import play.api.data.Form
+import play.api.data.Forms._
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc.{Action, Controller}
 import services.IProductService
