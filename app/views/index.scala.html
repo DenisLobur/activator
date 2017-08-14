@@ -1,20 +1,7 @@
-@*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
-@(message: String)
+@(message: String)(implicit flash:Flash)
 
-@*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
-@main("Welcome to Play") {
-
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @play20.welcome(message, style = "Scala")
-
+@main("Welcome to Reactive Web Store"){
+<!--<a href="/product"><img height="42" width="42" src="@routes.Assets.at("images/product.png")"> Manage Products</a><BR>-->
+<!--<a href="/review"><img height="42" width="42"  src="@routes.Assets.at("images/review.png")"> Manage Reviews</a><BR>-->
+<!--<a href="/image"><img height="42" width="42"   src="@routes.Assets.at("images/image.png")"> Manage Images</a><BR>-->
 }

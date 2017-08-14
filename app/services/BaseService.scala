@@ -5,7 +5,8 @@ import java.util.concurrent.atomic.AtomicLong
 import scala.collection.mutable
 
 trait BaseService[A] {
-  var inmemoryDB = new mutable.HashMap[Long, A]
+
+  var inMemoryDB = new mutable.HashMap[Long, A]
   var idCounter = new AtomicLong(0)
 
   def insert(a: A)

@@ -1,13 +1,17 @@
 package controllers
 
-import com.google.inject.{Inject, Singleton}
-import models.Product
-import play.Logger
+import javax.inject._
+import play.api._
+import play.api.mvc._
 import play.api.data.Form
 import play.api.data.Forms._
-import play.api.i18n.{I18nSupport, Messages, MessagesApi}
-import play.api.mvc.{Action, Controller}
+import play.api.data._
+import models.Product
+import play.api.i18n.Messages
+import play.api.i18n.I18nSupport
+import play.api.i18n.MessagesApi
 import services.IProductService
+import play.Application
 
 @Singleton
 class ProductController @Inject()(val messagesApi: MessagesApi,
